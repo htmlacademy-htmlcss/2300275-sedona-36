@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Kostya Solncev](https://up.htmlacademy.ru/htmlcss/36/user/2300275).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
 
 ---
 
