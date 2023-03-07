@@ -34,13 +34,8 @@ body {
 .page-container {
   margin: 0 auto;
   width: 1200px;
-
   min-height: 100%;
   background-color: #FFFFFF;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -58,7 +53,6 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: flex-start;
   width: 1060px;
   margin: 0 auto;
 }
@@ -67,6 +61,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 450px;
   font-weight: 700;
   font-size: 20px;
@@ -84,11 +79,11 @@ body {
 }
 
 .navigation-item {
-  padding: 20px 16px 20px 16px;
+  padding: 20px 16px;
 }
 
 .navigation-item-user {
-  padding: 22px 12px 22px 12px;
+  padding: 22px 12px;
 }
 
 .navigation-link {
@@ -105,13 +100,29 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #756157;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  align-items: center;
+}
+
+.navigation-item-button {
+  display: block;
+  box-sizing: border-box;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  margin: 14px 0px 14px 20px;
+  background-color: #756157;
+  text-align: center;
+  padding: 8px 34px;
 }
 
 /* Main */
+
+.main-container {
+  flex-grow: 1;
+}
 
 .welcome-logo {
   display: block;
@@ -215,7 +226,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 0px;
+  width: 1200px;
+  height: 246px;
 }
 
 .services-title {
@@ -249,11 +261,21 @@ body {
 /* Search hotels */
 
 .search-hotels {
+  width: 1200px;
+  height: 406px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #FFFFFF;
-  padding: 96px 304px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 592px;
+  height: 214px;
+  margin: 96px 304px;
 }
 
 .search-hotels-title {
