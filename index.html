@@ -23,24 +23,24 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list-user">
-          <li class="navigation-item-user">
-            <a class="navigation-link-user" href="#">
-              <img class="navigation-link-logo" src="images/icons/search.svg" alt="Логотип поиска">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item-user">
-            <a class="navigation-link-user" href="#">
-              <img class="navigation-link-favourites" src="images/icons/heart.svg" alt="Логотип избранного">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item-button">
-            <a class="button navigation-button-user" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
       </nav>
+      <ul class="user-list">
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <img class="user-icon" src="images/icons/search.svg" alt="Иконка поиска">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <img class="user-icon" src="images/icons/heart.svg" alt="Иконка - избранное">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="button user-item-button button-brown" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
     </header>
     <main class="main-container main-index">
       <section class="hero">
@@ -101,41 +101,39 @@
         </ul>
       </section>
       <section class="search-hotels">
-        <div class="search-container">
-          <h2 class="search-hotels-title">Заинтересовались?</h2>
-          <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button button-search" href="#">Поиск гостиницы в Седоне</button>
-        </div>
+        <h2 class="search-hotels-title headline">Заинтересовались?</h2>
+        <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title headline">Подпишитесь на рассылку</h2>
         <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button button-subscribe" type="submit">Подписаться</button>
+          <input class="subscribe-field field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
+          <button class="button button-subscribe button-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <img src="images/icons/vk.svg" alt="Логотип вконтакте">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <img class="social-icon" src="images/icons/vk.svg" alt="Логотип вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <img src="images/icons/telegram.svg" alt="Логотип телеграмм">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <img class="social-icon" src="images/icons/telegram.svg" alt="Логотип телеграмм">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/icons/youtub.svg" alt="Логотип ютюб">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social-icon" src="images/icons/youtub.svg" alt="Логотип ютюб">
               <span class="visually-hidden">Ютюб</span>
             </a>
           </li>

@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
-        <a class="header-logo" href="index.html">
-          <img class="sedona-logo" src="images/logo.svg" alt="Логотип городка Седона">
+        <a class="header-logo" href="#">
+          <img class="sedona-logo" src="images/logo.svg" width="140" height="70" alt="Логотип городка Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -19,27 +20,27 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list-user">
-          <li class="navigation-item-user">
-            <a class="navigation-link-user" href="#">
-              <img class="navigation-link-logo" src="images/icons/search.svg" alt="Логотип поиска">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item-user">
-            <a class="navigation-link-user" href="#">
-              <img class="navigation-link-favourites" src="images/icons/heart.svg" alt="Логотип избранного">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item-user">
-            <a class="button navigation-button-user" href="#">Хочу сюда!</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
+      <ul class="user-list">
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <img class="user-icon" src="images/icons/search.svg" alt="Иконка поиска">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="user-link" href="#">
+            <img class="user-icon" src="images/icons/heart.svg" alt="Иконка - избранное">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="user-item">
+          <a class="button user-item-button button-brown" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
     </header>
     <main class="main-inner">
       <header class="inner-header">
@@ -167,7 +168,7 @@
               <img class="hotel-card-image" src="images/hotel-4.jpeg" alt="Фото гостиницы Зеленое Дерево">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            
+
             <p class="hotel-card-type">Гостиница </p>
             <b class="hotel-card-price">От 1500 Р</b>
             <a class="hotel-card-button button" href="#">Подробнее</a>
@@ -209,23 +210,23 @@
     </section>
     <footer class="page-footer">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <img src="images/icons/vk.svg" alt="Логотип вконтакте">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <img class="social-icon" src="images/icons/vk.svg" alt="Логотип вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <img src="images/icons/telegram.svg" alt="Логотип телеграмм">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <img class="social-icon" src="images/icons/telegram.svg" alt="Логотип телеграмм">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/icons/youtub.svg" alt="Логотип ютюб">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social-icon" src="images/icons/youtub.svg" alt="Логотип ютюб">
               <span class="visually-hidden">Ютюб</span>
             </a>
           </li>
@@ -244,5 +245,6 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
 </html>
