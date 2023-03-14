@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -14,7 +16,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -24,40 +26,44 @@
           </li>
         </ul>
       </nav>
-      <ul class="user-list">
-        <li class="user-item">
-          <a class="user-link" href="#">
-            <img class="user-icon" src="images/icons/search.svg" alt="Иконка поиска">
-            <span class="visually-hidden">Поиск</span>
-          </a>
+      <ul class="user-menu-list">
+        <li class="user-menu-item">
+         <a class="user-menu-link" href="#">
+          <svg class="user-menu-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none" viewBox="0 0 19 19" aria-hidden="true" focusable="false">
+            <path d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z"/>
+          </svg>
+          <span class="visually-hidden">Поиск</span>
+         </a>
         </li>
-        <li class="user-item">
-          <a class="user-link" href="#">
-            <img class="user-icon" src="images/icons/heart.svg" alt="Иконка - избранное">
-            <span class="visually-hidden">Избранное</span>
-          </a>
+        <li class="user-menu-item">
+         <a class="user-menu-link favourites-link" href="#">
+          <svg class="user-menu-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17" aria-hidden="true" focusable="false">
+            <path d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+          </svg>
+          <span class="visually-hidden">Избранное</span>
+         </a>
         </li>
-        <li class="user-item">
-          <a class="button user-item-button button-brown" href="#">Хочу сюда!</a>
+        <li class="user-menu-item">
+         <a class="button user-menu-button brown-button" href="#">Хочу сюда!</a>
         </li>
-      </ul>
+       </ul>
     </header>
-    <main class="main-container main-index">
-      <section class="hero">
+    <main class="main-index main-container">
+      <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="welcome-logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
       <section class="advantages">
-        <div class="container-about">
-          <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
+        <h2 class="advantages-title headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages-description text-gray">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-item-white">
-            <h3 class="advantages-item-title">Настоящий городок</h3>
-            <p class="advantages-item-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages-item advantages-item-blue">
+            <div class="advantages-container">
+              <h3 class="advantages-item-title">Настоящий городок</h3>
+              <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="advantages-photo-sedona" src="images/photo-1.jpeg" width="800" height="385" alt="Фото города Седона">
           </li>
-          <img class="advantages-photo-sedona" src="images/photo-1.jpeg" width="800" height="385" alt="Фото города Седона">
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
             <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
@@ -70,48 +76,47 @@
             <h3 class="advantages-item-title">Мало туристов</h3>
             <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item advantages-item-white">
-            <h3 class="advantages-item-title">Там есть мост дьявола</h3>
-            <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </li>
-          <img class="advantages-photo-devil" src="images/photo-2.jpeg" width="800" height="385" alt="Фото моста Дьявола">
-        </ul>
-      </section>
-      <section class="services">
-        <div class="services-container">
-          <h2 class="services-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-          <p class="services-description">Опытный персонал и качественное обслуживание!</p>
-        </div>
-        <ul class="services-list">
-          <li class="services-item">
-            <img class="services-item-logo" src="images/icons/house.svg" alt="Логотип дома">
-            <h3 class="services-item-title">Жилье</h3>
-            <p class="services-item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="services-item">
-            <img class="services-item-logo" src="images/icons/food.svg" alt="Логотип бургера">
-            <h3 class="services-item-title">Еда</h3>
-            <p class="services-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="services-item">
-            <img class="services-item-logo" src="images/icons/present.svg" alt="Логотип подарка">
-            <h3 class="services-item-title">Сувениры</h3>
-            <p class="services-item-description">Не только китайского, но и настоящего местного производства!</p>
+          <li class="advantages-item advantages-item-blue">
+            <img class="advantages-photo-devil" src="images/photo-2.jpeg" width="800" height="385" alt="Фото моста Дьявола">
+            <div class="advantages-container">
+              <h3 class="advantages-item-title">Там есть мост&nbsp;дьявола</h3>
+              <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </li>
         </ul>
       </section>
+      <section class="service">
+        <h2 class="service-heading headline">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="service-text text-gray">Опытный персонал и качественное обслуживание!</p>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3 class="service-title">Жильё</h3>
+            <p class="service-description text-gray">Рекомендуем пожить в&nbsp;настоящем мотеле,
+              всё&nbsp;как&nbsp;в кино!</p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Еда</h3>
+            <p class="service-description text-gray">Всегда заказывайте
+              топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Сувениры</h3>
+            <p class="service-description text-gray">Не только китайского,
+              но&nbsp;и&nbsp;настоящего местного производства!</p>
+          </li>
+        </ul>
       <section class="search-hotels">
         <h2 class="search-hotels-title headline">Заинтересовались?</h2>
-        <p class="search-hotels-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
+        <p class="search-hotels-description text-gray">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button button-search-hotels brown-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
-        <h2 class="subscribe-title headline">Подпишитесь на рассылку</h2>
-        <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input class="subscribe-field field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button button-subscribe button-blue" type="submit">Подписаться</button>
+      <section class="subscibe-index">
+        <h2 class="subscibe-title headline">Подпишитесь на рассылку</h2>
+        <p class="subscibe-desription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscibe-form" action="https://echo.htmlacademy.ru/" method="post" >
+          <label class="visually-hidden" for="email-user">Email</label>
+          <input class="subscibe-email field" name="email-user" id="email-user" placeholder="Ваш e-mail" type="email">
+          <button class="subscibe-button button blue-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
